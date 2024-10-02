@@ -1,0 +1,26 @@
+//////////////////////////
+inicio
+//////////////////////
+Con este comando veras los comandos q puedes ejecutar en artisan
+-> php artisan
+
+Usa este comando cuando estes cansado
+-> php artisan inspire
+
+
+Con este comando creas, modelo, controlador y factories con un CRUD ya hecho
+->php artisan make:model Post -mcf --resource
+
+
+Con este comando refrescas las migraciones y activas los seeders
+php artisan migrate:refresh --seed
+
+/////////////////////////////
+Post::get();-> Trae todos los registros de la base de datos Post::frist();-> Trae el primer registro de la base de datos Post::find(id); -> Busca un registro en la base de datos por medio de su id Post::latest(); -> Trae todos los registros de la base de datos, y los ordena de forma descendente
+
+adicional, podemos utilizar el método paginate(), para realizar la paginación, solo no nos debemos de incluir en nuestras vistas la propiedad links() para que podamos visualizar los controles de paginación
+/////////////////////////////
+
+con este comando instalar laravel breeze en la herramienta de desarrollo
+-> composer require laravel/breeze --dev
+(esto nos ayudara con el login)
